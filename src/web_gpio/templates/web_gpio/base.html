@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block head_title %}{% endblock head_title %}</title>
+    {% load bootstrap4 %}
+    {% bootstrap_css %}
+    <style>
+      body {
+        background-color: #000000
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      {% block content %}
+      {% endblock content %}
+    </div>
+
+    {% bootstrap_javascript jquery='full' %}
+    {% block javascript %}
+    {% endblock javascript %}
+
+  </body>
+</html>

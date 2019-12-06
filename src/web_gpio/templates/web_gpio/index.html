@@ -1,0 +1,50 @@
+{% extends "web_gpio/base.html" %}
+
+{% block head_title %}Raspi Web GPIO{% endblock head_title %}
+
+{% block content %}
+  <div class='container-fluid'>
+    {% load static %}
+    <div class='btn-group' role='group'>
+      <button class='image-button' data-buttonID='1'>
+        <img src='{% static '/web_gpio/images/red/red_0.jpg' %}'/>
+        <img src='{% static '/web_gpio/images/green/green_0.jpg' %}' style='display:none'/>
+      </button>
+      <button class='image-button' data-buttonID='2'>
+        <img src='{% static '/web_gpio/images/red/red_1.jpg' %}'/>
+    	<img src='{% static '/web_gpio/images/green/green_1.jpg' %}' style='display:none'/>
+      </button>
+      <button class='image-button' data-buttonID='3'>
+    	<img src='{% static '/web_gpio/images/red/red_2.jpg' %}'/>
+    	<img src='{% static '/web_gpio/images/green/green_2.jpg' %}' style='display:none'/>
+      </button>
+      <button class='image-button' data-buttonID='4'>
+    	<img src='{% static '/web_gpio/images/red/red_3.jpg' %}'/>
+    	<img src='{% static '/web_gpio/images/green/green_3.jpg' %}' style='display:none'/>
+      </button>
+    </div>
+
+    <div class='btn-group' role='group'>
+      <button class='image-button' data-buttonID='5'>
+    	<img src='{% static '/web_gpio/images/red/red_4.jpg' %}'/>
+    	<img src='{% static '/web_gpio/images/green/green_4.jpg' %}' style='display:none'/>
+      </button>
+      <button class='image-button' data-buttonID='6'>
+    	<img src='{% static '/web_gpio/images/red/red_5.jpg' %}'/>
+    	<img src='{% static '/web_gpio/images/green/green_5.jpg' %}' style='display:none'/>
+      </button>
+      <button class='image-button' data-buttonID='7'>
+    	<img src='{% static '/web_gpio/images/red/red_6.jpg' %}'/>
+    	<img src='{% static '/web_gpio/images/green/green_6.jpg' %}' style='display:none'/>
+      </button>
+      <button class='image-button' data-buttonID='8'>
+    	<img src='{% static '/web_gpio/images/red/red_7.jpg' %}'/>
+    	<img src='{% static '/web_gpio/images/green/green_7.jpg' %}' style='display:none'/>
+      </button>
+    </div>
+  </div>
+{% endblock content %}
+
+{% block javascript %}
+  <script src='{% static '/web_gpio/js/main.js' %}'></script>
+{% endblock javascript %}
